@@ -1,0 +1,47 @@
+TRAVAIL LOCAL
+
+1)envoyer un premier depot
+-initialiser le repertoire avec le depot
+git init
+
+-ajout des fichiers dans le HEAD
+git commit -m "Ajout des fichiers du projet"
+
+git branch -M main
+-ajouter l'addresse du code sur github
+git remote add origin https://github.com/example/example-project
+git add *
+
+-ajout dans le depot distant
+git push origin main
+-mise ajour local
+git pull
+B3D8-A66D
+
+
+2)ajouter un modif
+git branch testing
+git checkout testing
+touch README
+
+git add README
+git commit -m "creation du readme"
+
+
+
+3)ajouter ".gitignore"
+Une voie ceci fait, ouvrez le fichier caché « .gitignore » . Ce fichier permet de définir une liste de fichiers qui ne seront pas pris en compte par git. Ajoutez-y les liste suivante:
+
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+sitemap.xml
+sitemap.xml.gz
+*.log
+wp-content/cache/
+wp-content/backups/
+.DS_Store
+Tous ces fichiers n’ont aucune utilité à être copie en développement. Évidemment, si votre éditeur laisse des fichiers de cache derrière lui, n’hésites pas à les ajouter à la liste, de même pour les fichiers .nfo si votre Windows en laisse dans les dossiers.
