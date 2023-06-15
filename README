@@ -45,3 +45,14 @@ wp-content/cache/
 wp-content/backups/
 .DS_Store
 Tous ces fichiers n’ont aucune utilité à être copie en développement. Évidemment, si votre éditeur laisse des fichiers de cache derrière lui, n’hésites pas à les ajouter à la liste, de même pour les fichiers .nfo si votre Windows en laisse dans les dossiers.
+
+
+
+3)mise à jour de notre repo après mise à jour local (avec git pull)
+
+si erreur dans branch main avec "git push origin main":  remote n'existe pas
+
+git checkout main
+git remote add origin https://github.com/example/example-project
+
+git pull 
